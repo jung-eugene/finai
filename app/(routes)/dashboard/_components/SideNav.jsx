@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Image from "next/image";
 import {
   LayoutGrid,
   PiggyBank,
@@ -26,19 +25,19 @@ function SideNav() {
       path: "/dashboard/incomes",
     },
     {
-      id: 2,
+      id: 3,
       name: "Budgets",
       icon: PiggyBank,
       path: "/dashboard/budgets",
     },
     {
-      id: 3,
+      id: 4,
       name: "Expenses",
       icon: ReceiptText,
       path: "/dashboard/expenses",
     },
     {
-      id: 4,
+      id: 5,
       name: "Upgrade",
       icon: ShieldCheck,
       path: "/dashboard/upgrade",
@@ -51,14 +50,8 @@ function SideNav() {
   }, [path]);
   return (
     <div className="h-screen p-5 border shadow-sm">
-      {/* <Image src={'/logo.svg'}
-        alt='logo'
-        width={160}
-        height={100}
-        /> */}
       <div className="flex flex-row items-center">
-        <span className="text-black font-bold text-xl">Fin</span>
-        <span className="text-blue-800 font-bold text-xl">AI</span>
+        <span className="text-black font-bold text-xl">FinAI</span>
       </div>
       <div className="mt-5">
         {menuList.map((menu, index) => (

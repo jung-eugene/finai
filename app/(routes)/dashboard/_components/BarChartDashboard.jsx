@@ -10,12 +10,19 @@ import {
 } from "recharts";
 
 function BarChartDashboard({ budgetList }) {
+  // Transform the data to label different name instead of "totalSpend" and "amount"
+  const transformedData = budgetList.map((item) => ({
+    ...item,
+    Spend: item.totalSpend,
+    Remaining: item.amount - item.totalSpend,
+  }));
+
   return (
     <div className="border rounded-2xl p-5">
       <h2 className="font-bold text-lg">Activity</h2>
       <ResponsiveContainer width={"80%"} height={300}>
         <BarChart
-          data={budgetList}
+          data={transformedData}
           margin={{
             top: 7,
           }}
@@ -24,8 +31,8 @@ function BarChartDashboard({ budgetList }) {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="totalSpend" stackId="a" fill="#4845d2" />
-          <Bar dataKey="amount" stackId="a" fill="#C3C2FF" />
+          <Bar dataKey="Spend" stackId="a" fill="#a5a5a5" />
+          <Bar dataKey="Remaining" stackId="a" fill="#8b5cf6" />
         </BarChart>
       </ResponsiveContainer>
     </div>

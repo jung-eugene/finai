@@ -87,7 +87,7 @@ function CardInfo({ budgetList, incomeList }) {
                   ${formatNumber(totalBudget)}
                 </h2>
               </div>
-              <PiggyBank className="bg-blue-800 p-3 h-12 w-12 rounded-full text-white" />
+              <PiggyBank className="bg-primary p-3 h-12 w-12 rounded-full text-white" />
             </div>
             <div className="p-7 border rounded-2xl flex items-center justify-between">
               <div>
@@ -96,14 +96,14 @@ function CardInfo({ budgetList, incomeList }) {
                   ${formatNumber(totalSpend)}
                 </h2>
               </div>
-              <ReceiptText className="bg-blue-800 p-3 h-12 w-12 rounded-full text-white" />
+              <ReceiptText className="bg-primary p-3 h-12 w-12 rounded-full text-white" />
             </div>
             <div className="p-7 border rounded-2xl flex items-center justify-between">
               <div>
                 <h2 className="text-sm">No. of Budgets</h2>
                 <h2 className="font-bold text-2xl">{budgetList?.length}</h2>
               </div>
-              <Wallet className="bg-blue-800 p-3 h-12 w-12 rounded-full text-white" />
+              <Wallet className="bg-primary p-3 h-12 w-12 rounded-full text-white" />
             </div>
             <div className="p-7 border rounded-2xl flex items-center justify-between">
               <div>
@@ -112,7 +112,7 @@ function CardInfo({ budgetList, incomeList }) {
                   ${formatNumber(totalIncome)}
                 </h2>
               </div>
-              <CircleDollarSign className="bg-blue-800 p-3 h-12 w-12 rounded-full text-white" />
+              <CircleDollarSign className="bg-primary p-3 h-12 w-12 rounded-full text-white" />
             </div>
           </div>
         </div>

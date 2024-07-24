@@ -2,6 +2,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "@/components/ui/sonner";
+import icon from "../public/icon.svg";
 
 const font = Manrope({ subsets: ["latin"] });
 
@@ -16,6 +17,9 @@ export default function RootLayout({ children }) {
       publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
     >
       <html lang="en">
+        <head>
+          <link rel="icon" href={icon.src} type="image/svg+xml" />
+        </head>
         <body className={font.className}>
           <Toaster />
           {children}
