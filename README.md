@@ -1,7 +1,6 @@
 <div align="center">
 <p float="left">
-  <img src="./public/home.png" height="200" />
-  <img src="./public/dashboard.png" height="200" /> 
+  <img src="./public/home.png" />
 </p>
 
   <div>
