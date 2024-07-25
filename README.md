@@ -28,7 +28,7 @@
 
 ### <a name="introduction">🌱 Introduction</a>
 
-Welcome to FinAI, your AI-powered personal finance advisor. FinAI leverages the latest advancements in AI and web technologies to provide personalized financial insights, helping users manage their income, expenses, and budgets effectively. Built with Next.js and TypeScript, FinAI integrates the OpenAI API to deliver real-time, tailored financial advice, making it easier than ever to stay on top of your finances.
+Welcome to FinAI, your AI-powered personal finance advisor. FinAI leverages the latest advancements in AI and web technologies to provide personalized financial insights, helping users manage their income, expenses, and budgets effectively. Built with Next.js and TypeScript, FinAI integrates the OpenAI API to deliver real-time, customized financial advice, making it easier than ever to stay on top of your finances.
 
 ---
 
@@ -77,6 +77,8 @@ NEXT_PUBLIC_DATABASE_URL=your_database_url
 # Serve with hot reload at localhost:3000
 $ npm run dev
 ```
+
+---
 
 ### <a name="future">🚀 Future Improvements</a>
 
